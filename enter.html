@@ -1,49 +1,69 @@
 <!doctype html>
 <html>
+
 <head>
 	<title>foodik</title>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
 	<style type="text/css">
-		body{
+		@keyframes transition {
+			from {
+				opacity: 0;
+				transform: rotateX(-10deg);
+			}
+
+			to {
+				opacity: 1;
+				transform: rotateX(0);
+			}
+		}
+
+		body {
+			animation: transition 2s;
 			background-color: #46677D;
 		}
-		#form{
+
+		#form {
 			position: relative;
-			top:10px;
-            left:550px;;
+			top: 35%;
+			left:40%;
 			width: 400px;
-			
-			
-			}
-		#chef{
+
+
+		}
+
+		#chef {
 			width: 200px;
 			height: 200px;
 			position: relative;
 			top: 0;
-			left: 44%;
+			left:44%;
 		}
-		@font-face{
+
+		@font-face {
 			font-family: "kodak";
-			src: url("font/koodak.ttf");}
-		#name{
+			src: url("font/koodak.ttf");
+		}
+
+		#name {
 			text-decoration: none;
 			font-family: "kodak";
 			font-size: 40px;
 			color: #8FAEBB;
 		}
-		#control{
+
+		#control {
 			text-align: center;
 		}
-		
-		form{
+
+		form {
 			position: relative;
-			left:55px;
 			color: #8FAEBB;
 			font-size: 20px;
 			font-family: "kodak";
 		}
-		input{
+
+		input {
 			font-family: "kodak";
 			color: #346F87;
 			width: 300px;
@@ -52,42 +72,48 @@
 			font-size: 20px;
 			text-align: center;
 		}
-		#button{
+
+		#button {
 			height: 40px;
 		}
-		td a{
+
+		td a {
 			text-decoration: none;
 			color: #BED7E1;
 		}
-		#center{text-align: center;}
+
+		#center {
+			text-align: center;
+		}
 	</style>
-	
+
 </head>
 
 <body>
-	<img id="chef" src="pics/chef.png" alt="logo"/>
+	<img id="chef" src="pics/chef.png" alt="logo" />
 	<div id="control"><a href="index.html" id="name">فودیک</a></div>
-		<div id="form">
-			<form>
-				<table>
-				
-					<tr>
-					<td><input type="text" placeholder="نام کاربری یا ایمیل یا شماره موبایل"/></td>
+	<div id="form">
+		<form>
+			<table>
+
+				<tr>
+					<td><input type="text" placeholder="نام کاربری یا ایمیل یا شماره موبایل" /></td>
 				</tr>
-					<tr>
-					<td><input type="text" placeholder="رمز عبور"/></td>
+				<tr>
+					<td><input type="text" placeholder="رمز عبور" /></td>
 				</tr>
-					<tr>
+				<tr>
 					<td>---------------------------------</td>
 				</tr>
-					<tr>
-					<td><input id="button" type="button" value="ورود"/></td>
+				<tr>
+					<td><input id="button" type="button" value="ورود" /></td>
 				</tr>
-					<tr>
-					<td id="center">    برای عضویت <a href="register.html">اینجا</a> کلیک کنید</td>
+				<tr>
+					<td id="center"> برای عضویت <a href="register.html">اینجا</a> کلیک کنید</td>
 				</tr>
-				</table>
-			</form>
-		</div>
+			</table>
+		</form>
+	</div>
 </body>
+
 </html>
